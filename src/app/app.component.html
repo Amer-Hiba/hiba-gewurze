@@ -1,3 +1,52 @@
-<h1>
-  {{title}}
-</h1>
+<app-header></app-header>
+<div class="container-fluid">
+
+  <div class="row">
+    <div id="home"  class="section">  
+      <div class="center info">
+        <h1>Hiba Gewürze</h1> 
+        <h2>شركة هبا للبهارات</h2>
+        <p>أجود أنواع البهارات الدمشقية</p>
+        <h3>الآن في المانيا</h3>
+      </div>
+    </div>    
+  </div>
+
+
+  <div id="ourProduct" class="row section">
+      <div class="container">
+        <div class="section-title">
+          <h1 translate>our_products</h1>
+        </div>
+        <div class="row info">
+            <div class="col-xs-12 col-md-6"> 
+              <p class="text-center" *ngFor="let type of leftSide">
+                {{type}}
+              </p >
+            </div> 
+            <div class="col-xs-12 col-md-6">
+              <p class="text-center" *ngFor="let type of rightSide">
+                {{type}}
+              </p>              
+            </div>   
+          </div>
+      </div>  
+  </div>
+
+
+  <div id="contactUs" class="row">
+      <div class="col-xs-12 text-center"> 
+        <p><b>Amer Hiba</b></p>
+        <span>Address</span>/ <span>Helene-Mayer-Ring 10</span>
+        <p>80809&nbsp;&nbsp;&nbsp;München</p>
+        <span>Telephone</span>/ <span>0049&nbsp;&nbsp;&nbsp;176&nbsp;&nbsp;&nbsp;76092258</span>
+        <br/>
+        <span>Mobile</span>/ <span>0049&nbsp;&nbsp;&nbsp;176&nbsp;&nbsp;&nbsp;76092258</span>
+        <br/>
+        <span>Email</span>/ <a href="mailto:amer.hiba@hiba.gewuerze.de">amer.hiba@hiba.gewuerze.de</a>
+      </div> 
+  </div>
+</div>   
+
+  
+

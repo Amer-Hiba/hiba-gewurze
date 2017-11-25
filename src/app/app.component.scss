@@ -1,0 +1,52 @@
+.section {
+    border-bottom: 7px solid rgba(34, 34, 34, 1);
+}
+#home {
+    height: 889px;
+    background-image: url("../assets/images/section1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white
+}
+#ourProduct {
+    background-image: url("../assets/images/products.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    color: white
+}
+#contactUs {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 280px;
+    width: 50%;
+    text-align: center;
+}
+
+.center-align{
+    text-align: center
+}
+
+.info {
+    background-color: rgba(107, 93, 66, 0.76);
+}
+.section-title {
+    width: 350px;
+    background: #333;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
