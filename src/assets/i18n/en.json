@@ -1,8 +1,12 @@
 {
     "home": "Home",
+    "title": "Hiba Gewürze",
+    "description1": "Die Beste Damaszene Gewürze",
+    "description2":"jetzt in Deutschland",
     "our_products": "Unsere Produkte",
     "contact_us": "Kontaktieren",
     "language": "Language",
     "german_language": "DE",
-    "arabic_language": "AR"
+    "arabic_language": "Arabisch",
+    "our_branches": "Unsere Filialen"
 }

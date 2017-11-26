@@ -4,10 +4,9 @@
   <div class="row">
     <div id="home"  class="section">  
       <div class="center info">
-        <h1>Hiba Gewürze</h1> 
-        <h2>شركة هبا للبهارات</h2>
-        <p>أجود أنواع البهارات الدمشقية</p>
-        <h3>الآن في المانيا</h3>
+        <h1 translate>title</h1> 
+        <p translate>description1</p>
+        <h3 translate>description2</h3>
       </div>
     </div>    
   </div>
@@ -34,18 +33,25 @@
   </div>
 
 
-  <div id="contactUs" class="row">
-      <div class="col-xs-12 text-center"> 
-        <p><b>Amer Hiba</b></p>
-        <span>Address</span>/ <span>Helene-Mayer-Ring 10</span>
-        <p>80809&nbsp;&nbsp;&nbsp;München</p>
-        <span>Telephone</span>/ <span>0049&nbsp;&nbsp;&nbsp;176&nbsp;&nbsp;&nbsp;76092258</span>
-        <br/>
-        <span>Mobile</span>/ <span>0049&nbsp;&nbsp;&nbsp;176&nbsp;&nbsp;&nbsp;76092258</span>
-        <br/>
-        <span>Email</span>/ <a href="mailto:amer.hiba@hiba.gewuerze.de">amer.hiba@hiba.gewuerze.de</a>
-      </div> 
-  </div>
+  <div id="branches" class="row section">
+      <div class="container">
+          <div class="section-title">
+            <h1 translate>our_branches</h1>
+          </div>
+      <div *ngFor="let branch of branches">
+        <div class="col-lg-4 col-md-6 col-xs-12 text-center branch">
+          <h2>{{branch.city}}</h2>
+          <p><b>{{branch.name}}</b></p>
+          <span *ngIf="branch.address">Addresse/ </span><span *ngIf="branch.address">{{branch.address}}</span>
+          <br>
+          <span>{{branch.zipOrt}}</span>    <span>{{branch.ort}}</span>
+          <span *ngIf="branch.telephone">Telephone/ </span><span *ngIf="branch.telephone">{{branch.telephone}}</span>
+          <br>
+          <span>Mobile /</span><span>{{branch.mobile}}</span>
+          <br>
+          <span>Email/ </span><a  [href]="'mailto:' + branch.email + '/index.html'">{{branch.email}}</a>
+        </div> 
+      </div>
 </div>   
 
   

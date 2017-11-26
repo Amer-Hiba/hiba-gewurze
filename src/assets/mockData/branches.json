@@ -1,0 +1,46 @@
+[
+    {
+        "key": "1",
+        "name": "Tarek Alhayek",
+        "address": "Max-sönnet-str.18",
+        "addressOrt": "München",
+        "addressZipOrt": "80995",
+        "telephone": "",
+        "mobile": "0049   151   70005864",
+        "email": "tareke.Alhayek@hiba.gewuerze.de",
+        "city": "München"
+    },
+    {
+        "key": "2",
+        "name": "Molham Kindakli",
+        "address": "Neheimer Str 2",
+        "addressOrt": "Berlin",
+        "addressZipOrt": "13507",
+        "telephone": "",
+        "mobile": "0049   176   41626900",
+        "email": "molham.kindakli@hiba-gewuerze.de",
+        "city": "Berlin"
+    },
+    {
+        "key": "3",
+        "name": "Anas Dada",
+        "address": "",
+        "addressOrt": "",
+        "addressZipOrt": "",
+        "telephone": "",
+        "mobile": "004917624244463 ",
+        "email": "anas.dada@hiba-gewuerze.de",
+        "city": "Dortmond/Essen/Bochum"
+    },
+    {
+        "key": "4",
+        "name": "Zuheir Bani Marjeh",
+        "address": "Lange Straße 73",
+        "addressOrt": "Garbsen",
+        "addressZipOrt": "30827",
+        "telephone": "",
+        "mobile": "0049   176   47671912",
+        "email": "zuheir.marjeh@hiba-gewuerze.de",
+        "city": "Hannover"
+    }
+]

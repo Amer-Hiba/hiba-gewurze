@@ -18,6 +18,7 @@ export class AppComponent {
   rightSide: string[];
   leftSide: string[];
   browserLanguage: string;
+  branches: any [];
 
   constructor(private translate: TranslateService, private http: Http) {
     let browserLang = translate.getBrowserLang()+'2';
@@ -28,10 +29,11 @@ export class AppComponent {
     else {
       translate.setDefaultLang('ar');
       translate.use('ar');
-    }    
-      
+    }
 
     this.getTypes()
+
+    this.getBranches()
 
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.getTypes()
@@ -67,9 +69,18 @@ export class AppComponent {
           , error => console.log(error))
   }
 
+  getBranches (){
+     // get types data
+     this.getJSON('assets/mockData/branches.json')
+     .subscribe(data => {
+       console.log ('DATA', data);
+       this.branches = data
+     }
+       , error => console.log(error))
+  }
+
   getJSON(file: string):  Observable<any> {
     return this.http.get(file)
                     .map((res:any) => res.json())
   }
-  
 }

@@ -36,7 +36,13 @@
 .center-align{
     text-align: center
 }
-
+.german-flag {
+    background-image: url("../assets/images/german.flag.png"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 .info {
     background-color: rgba(107, 93, 66, 0.76);
 }
@@ -46,7 +52,16 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
+    color: white
+}
+#branches {
+    background: #333;
+    color: white
 }
 
+.branch {
+    
+    margin-bottom: 50px
+}
 
 
